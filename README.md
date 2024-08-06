@@ -1,23 +1,18 @@
 # Kubernetes MongoDB Deployment Project
-### This Project is created with the help of using nanajanashia/k8s-demo-app:v1.0, the docker image. The docker image is already created by her.
-
+### This Project is created with the help of using nanajanashia/k8s-demo-app:v1.0, the docker image.
 # Kubernetes Demo Application
-
 This project is based on nanajanashia's Kubernetes tutorial.
 Original Docker image: `nanajanashia/k8s-demo-app:v1.0`
 
 ## Project Overview
-
 This project demonstrates how to deploy a simple web application using Kubernetes. It uses MongoDB as a database, running alongside the web server in a Kubernetes cluster.
 
 ## Prerequisites
-
 - Minikube
 - kubectl
 - Docker (optional: for building your own images)
 
 ## Project Structure
-
 - `mongo.yaml`: MongoDB deployment and service definition
 - `webapp.yaml`: Web application deployment and service definition
 - `mongo-secret.yaml`: Secret for MongoDB credentials
@@ -25,8 +20,7 @@ This project demonstrates how to deploy a simple web application using Kubernete
 - `README.md`: Project documentation
 
 ## Configuration Files
-
-### mongo-secret.yaml
+ mongo-secret.yaml
 
 This file contains the MongoDB credentials as a Kubernetes Secret:
 
@@ -50,6 +44,7 @@ Kubernetes
 Docker
 MongoDB
 Learning Outcomes
+
 Through this project, the following concepts were learned:
 
 Basic Kubernetes concepts (Pods, Deployments, Services, Secrets, ConfigMaps)
@@ -61,7 +56,7 @@ Configuring applications using ConfigMaps
 Limitations and Areas for Improvement
 The current configuration has several limitations and is designed for learning and demonstration purposes only:
 
-MongoDB Configuration:
+### MongoDB Configuration:
 Lack of data persistence (data loss on Pod restart)
 Limited scalability (only supports a single instance)
 Absence of high availability features
@@ -75,7 +70,7 @@ Security Concerns:
 While Secrets are used, they are base64 encoded, which is not encryption
 No network policies are defined to restrict communication between pods
 
-##Improvements for a production environment:
+### Improvements for a production environment:
 
 Implement StatefulSet for MongoDB
 Use PersistentVolumes and PersistentVolumeClaims
