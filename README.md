@@ -49,7 +49,6 @@ Technologies Used
 Kubernetes
 Docker
 MongoDB
-Node.js (web application)
 Learning Outcomes
 Through this project, the following concepts were learned:
 
@@ -75,7 +74,8 @@ No domain name routing
 Security Concerns:
 While Secrets are used, they are base64 encoded, which is not encryption
 No network policies are defined to restrict communication between pods
-Improvements for a production environment:
+
+##Improvements for a production environment:
 
 Implement StatefulSet for MongoDB
 Use PersistentVolumes and PersistentVolumeClaims
